@@ -1,0 +1,22 @@
+# 探针 / 日志 / 截图 / 构建产物，不进仓库
+_*
+*.log
+*_build.txt
+*_pyi*.txt
+
+android/out/
+android/shots/
+android/build/
+android/dist/
+android/*.apk
+android/*.idsig
+*.apk
+
+spark-src/build/
+spark-src/dist/
+dist/
+build/
+
+**/__pycache__/
+*.pyc
+*.spec.bak
