@@ -1,21 +1,25 @@
-# 探针 / 日志 / 截图 / 构建产物，不进仓库
+# 目录约定：src=源代码，release=打包产物，work=调试数据（探针/日志/截图）
+# 后两者都不进仓库，只保留源码
+
+# 我产生的调试数据
+work/
 _*
 *.log
-*_build.txt
-*_pyi*.txt
 
-android/out/
-android/shots/
-android/build/
-android/dist/
-android/*.apk
-android/*.idsig
+# 打包产物
+release/
 *.apk
+*.idsig
+*.exe
 
-spark-src/build/
-spark-src/dist/
-dist/
-build/
+# 构建中间目录
+src/windows/build/
+src/windows/dist/
+src/android/out/
+src/android/dist/
+src/android/shots/
+src/android/assets/app.html
+src/android/version.txt
 
 **/__pycache__/
 *.pyc
